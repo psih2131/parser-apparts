@@ -1,5 +1,15 @@
 {
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "parse": "node index.js",
+    "api": "node server.js",
+    "stop": "taskkill /f /im node.exe",
+    "restart": "npm run stop && npm start"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "puppeteer": "^24.30.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-proxy": "^1.0.2"
